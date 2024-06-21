@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="styleCTSP.css">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="style.css">
+
+	
+	
+</head>
+
+
+
+<body>
+ <header>
+	<img src ="anh1.png" alt ="" />
+ </header>
+ <nav>
+	<div class ="container"> 
+		<ul>
+			<li><a href ="indexTheGioiDiDong.html"><img style ="width: 150px; height: 100%" src ="logo.png" alt =""></a></li>
+			<li id ="address-form" ><a href ="#" >Đà Nẵng <i class="fas fa-sort-down"></i></a></li>
+			
+			
+			<li><input type ="text" placeholder ="Bạn tìm gì..."><i class="fas fa-search"></i> </li>
+			<!--
+ 
+			<li><a href =""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng </button></li>
+			-->
+				<li>
+				<button class="btn-open-cart"><i class="fas fa-shopping-cart"></i>Giỏ hàng (<span id="cartItemCount"></span>)</button>
+			</li>
+
+			
+			<li><a href ="">Lịch sử</br> đơn hàng</a></li>
+			<li><a href =""><span class ="btn-content"><span class ="btn-top"></span></span>Mua thẻ nạp ngay</a></li>
+			<li><a>24h Công nghệ</a></li>
+			<li><a>Hỏi đáp</a></li>
+			<li><a href =" indexB3.html">Đăng Nhập hoặc Đăng Ký</a></li>
+			
+			<div class ="address-form">
+					<div class ="address-form-content">
+					
+						<h2>Chọn địa chỉ nhận hàng
+							<span id ="address-close"> Đóng X</span>
+						</h2>
+						<form>
+							<p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+							<select name ="" id ="">
+								<option value ="#">--Chọn địa điểm</option>
+								<option value ="#">Đà Nẵng</option>
+							
+							</select>
+							<select name ="" id ="">
+								<option value ="#">--Chọn Quận/Huyện</option>
+								<option value ="#">--Chọn địa điểm</option>
+							
+							</select>
+							<select name ="" id ="">
+								<option value ="#">--Chọn Phường/Xã</option>
+								<option value ="#">--Chọn địa điểm</option>
+							
+							</select>
+							<input type ="text" placeholder="Số nhà, Tên đường">
+						
+							
+						</form>
+						
+					</div>
+				</div>
+			
+			
+		</ul>
+	</div>
+ </nav>
+ 
+ <section class ="menu-bar">
+	<div class ="container">
+		<div class ="menu-bar-content">
+			<ul>
+				<li><a href =""><i class="fas fa-mobile-alt"></i>Điện Thoại</a>
+					<div class ="submenu">
+							<ul>
+								<li><a href ="#">Điện thoại cũ</a></li>
+								<li><a href ="indexDT.html">Điện thoại Iphone</a></li>
+								<li><a href ="">Điện thoại giá rẻ</a></li>
+								<li><a href ="">Điện thoại mới về</a></li>
+								<li><a href ="">Đổi máy</a></li>
+								<li><a href ="">Thu mua điện thoại cũ</a></li>
+								
+							</ul>
+					</div>
+				
+				</li>
+				<li><a href =""><i class="fas fa-laptop"></i>LapTop</a>
+					<div class ="submenu">
+							<ul>
+								<li><a href ="">Laptop cũ</a></li>
+								<li><a href ="">Laptop Gaming</a></li>
+								<li><a href ="">Laptop giá rẻ</a></li>
+								<li><a href ="">Laptop mới về</a></li>
+								<li><a href ="">Đổi máy</a></li>
+								<li><a href ="">Thu mua LapTop cũ</a></li>
+								
+							</ul>
+					</div>
+				
+				</li>
+				<li><a href =""><i class="fas fa-tablet"></i>Tablet</a></li>
+				<li><a href =""><i class="fas fa-headphones-alt"></i>Phụ kiện<i style ="font-size: 16px; margin-left: 6px" class="fas fa-sort-down"></i></a>
+					<div class ="submenu">
+						<ul>
+							<li><a href ="">Sạc điện Thoại</a></li>
+							<li><a href ="">Sạc máy tính</a></li>
+							<li><a href ="indexPK.html">Tai Nghe</a></li>
+							<li><a href ="">Sạc Không Dây</a></li>
+							<li><a href ="">Pin điện Thoại</a></li>
+							<li><a href ="">Kính cường lực</a></li>
+							<li><a href ="">Sạc điện Thoại</a></li>
+							<li><a href ="">Sạc máy tính</a></li>
+							<li><a href ="">Tai Nghe</a></li>
+							<li><a href ="">Sạc Không Dây</a></li>
+							<li><a href ="">Pin điện Thoại</a></li>
+							<li><a href ="">Kính cường lực</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href =""><i class="fas fa-stopwatch-20"></i>Đồng hồ</a></li>
+				<li><a href =""><i class="fas fa-tablet"></i>Tablet</a></li>
+				<li><a href =""><i class="fas fa-mobile-alt"></i>Điện Thoại</a>
+					<div class ="submenu">
+							<ul>
+								<li><a href ="">Điện thoại cũ</a></li>
+								<li><a href ="">Điện thoại Iphone</a></li>
+								<li><a href ="">Điện thoại giá rẻ</a></li>
+								<li><a href ="">Điện thoại mới về</a></li>
+								<li><a href ="">Đổi máy</a></li>
+								<li><a href ="">Thu mua điện thoại cũ</a></li>
+								
+							</ul>
+					</div>
+				
+				</li>
+				<li><a href ="">Máy cũ giá rẻ</a></li>
+				<li><a href ="">SIM, thẻ cào</a></li>
+				<li><a href ="">Trả góp, điện nước</a></li>
+			</ul>
+		</div> 
+	</div>
+ </section>
+ 
+ <div class="banner-left">
+    <img src="dealleft.webp" alt="Deal cực căng trái">
+</div>
+<div class="banner-right">
+    <img src="dealright.webp" alt="Deal cực căng phải">
+</div>
+ 
+ 
+ <!--Nội dung cho trang-->
+ 
+ <div class ="content" >
+			
+			<div class ="content-left">
+				<div class ="content-left-header">
+					<span >THÔNG TIN SẢN PHẨM</span>
+				</div>
+			 <!--	
+				 <main>
+					<h2>Chi tiết sản phẩm</h2>
+					<div id="product-details">
+						<h3 id="product-name">Tên sản phẩm</h3>
+						<p id="product-price">Giá sản phẩm</p>
+						<p id="product-description">Mô tả sản phẩm</p>
+					</div>
+					<a href="index.html">Quay lại danh sách sản phẩm</a>
+				</main>
+				-->
+				
+				<div class ="content-left-on" >
+					<div class ="content-left-on-left">
+						<img id="product-image" src="12promax.jpg" class="slides" />
+					 <!--	<img src="F:\source\html\TheGioiDiDonggiohang\12promax.jpg" class="slides" />
+						<img src="F:\source\html\TheGioiDiDonggiohang\11promax.jpg" class="slides" />
+						-->
+					</div>
+					
+					<div class ="content-left-on-right">
+						<div id ="product-info">
+							 <h1 id="product-name">Tên sản phẩm</h1>
+														
+							<span style ="font-size: 28px;color: #333;font-weight: bold;">Giá:</span>
+							
+							<span id="product-price" style ="text-decoration: line-through;font-size: 24px;">32.990.000đ</span>
+							
+							<span id="product-priceTG" style ="color: red;font-size: 24px">30.990.000đ</span>
+							<br/><br/>
+							<div style ="display: flex; ">
+								<span style ="margin-right: 20px;margin-left: 0px">Số lượng: </span>
+								<input type="button" onclick="decreaseAmount('txtAmount')" value="-"/>
+								<input id="txtAmount" type="text"  value = "1" style="width: 50px; text-align: center;"/>
+								<input type="button" onclick="increaseAmount('txtAmount')" value="+" style ="margin-left:0px "/>
+							</div>
+							<br/>
+							<div class = "nutmau" style ="display: flex">
+								<span style ="">Chọn mẫu: </span>
+								<input  id="btnmau1" type="button" onclick="changeProductImageById('product-anh1')" value="Mẫu 1"/>
+								<input id="btnmau2" type="button" onclick="changeProductImageById('product-anh2')" value="Mẫu 2" style ="margin-left:0px "/>
+								<input id="btnmau3" type="button" onclick="changeProductImageById('product-anh3')" value="Mẫu 3" style ="margin-left:0px "/>
+								<input  id="btnmau4" type="button" onclick="changeProductImageById('product-anh4')" value="Mẫu 4" style ="margin-left:0px "/>
+							</div>
+							
+														
+							<div class ="mota" style ="margin-top: 12px;">							
+								<p id="mota1"  style ="margin: 10px 10px">mô tả 1</p>
+								<p id="mota2" style ="margin: 10px 10px">mô tả 2</p>
+								<p id="mota3" style ="margin: 10px 10px">Camera sau: 3 camera 12 MP</p>
+								<p id="mota4" style ="margin: 10px 10px">Camera trước: 12 MP</p>
+								<p id="mota5" style ="margin: 10px 10px">Chip:Apple A14 Bionic</p>
+							</div>
+							
+							<div class ="nut-chuc-nang">							 
+								<input 
+								type="button" onclick="addToCart('txtAmount')" value="Thêm vào giỏ hàng" style="margin-left: 10px;" />
+								<!--<input 
+								type="button" onclick="removeFromCart()" value="Xóa khỏi giỏ hàng" style="margin-left: 10px;" />-->
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class ="content-left-under">
+					<section class ="product-con">
+						<div>
+							<img id="product-anh1" src="13promax.jpg"  />
+							
+						</div>
+						<div>
+							<img id="product-anh2" src="12promax.jpg"  />
+							
+						</div>
+						<div>
+							<img id="product-anh3" src="11promax.jpg"  />
+							
+						</div>
+						<div>
+							<img id="product-anh4" src="11promax.jpg"  />
+							
+						</div>
+						
+					</section>
+				</div>
+				
+				<div class ="phanhoi-header">
+					<h2 style ="margin-left: 25px; color: #333">Ý KIẾN KHÁCH HÀNG :</h2>
+				</div>
+				
+				<div class="feedback-container">
+					
+					<textarea id="feedback" class="feedback-textarea" placeholder="Bình luận..."></textarea>
+				</div>
+				
+				
+				<div class="star-rating">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+					<br/><br/>
+					<button style ="" onclick="submitRating()">Gửi đánh giá</button>
+				</div>
+				
+				<div class ="mota" style ="margin-left: 22px; width: 95%; height: 100px">
+					<h3 style ="margin: 10px 10px">Hoàng Văn Tuân: </h3>
+						<p  style ="margin: 10px 10px">Sản phẩm rất tốt</p>
+				</div>
+				
+				<div class ="mota" style ="margin-left: 22px; width: 95%; height: 100px">
+					<h3 style ="margin: 10px 10px">Trần Hà Thanh Tùng: </h3>
+						<p  style ="margin: 10px 10px">Dịch vụ giao hàng rất tốt</p>
+				</div>
+				
+				<div class ="mota" style ="margin-left: 22px; width: 95%; height: 100px; margin-bottom: 80px;">
+					<h3 style ="margin: 10px 10px">Nguyễn Quang Tùng: </h3>
+						<p  style ="margin: 10px 10px">Chất lượng thực sự</p>
+				</div>
+				
+			</div>
+			
+			
+			<div class ="content-right">
+				<div class ="content-right-header">
+					<span >HÌNH ẢNH LIÊN QUAN</span>
+					
+				</div>
+				<div class ="content-right-under" style ="background-color: lightorange">
+					<div >
+						<img src="13promax.jpg"  />
+						
+					</div>
+					<div>
+						<img src="xsmax.jpg"  />
+						
+					</div>
+					<div>
+						<img src="xr.jpg"  />
+						
+					</div>
+					<div>
+						<img src="xs.jpg"  />
+						
+					</div>
+					<div>
+						<img src="13.jpg"  />
+						
+					</div>
+					<div>
+						<img src="11promax.jpg"  />
+						
+					</div>
+					<div>
+						<img src="12promax.jpg"  />
+						
+					</div>
+					<div>
+						<img src="xr.jpg"  />
+						
+					</div>
+					<div>
+						<img src="xs.jpg"  />
+						
+					</div>
+					<div>
+						<img src="13.jpg"  />
+						
+					</div>
+					<div>
+						<img src="11promax.jpg"  />
+						
+					</div>
+					<div>
+						<img src="12promax.jpg"  />
+						
+					</div>
+					<div>
+						<img src="xr.jpg"  />
+						
+					</div>
+					<div>
+						<img src="xs.jpg"  />
+						
+					</div>
+					<div>
+						<img src="13.jpg"  />
+						
+					</div>
+					<div>
+						<img src="11promax.jpg"  />
+						
+					</div>
+					<div>
+						<img src="12promax.jpg"  />
+						
+					</div>
+					
+					
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		
+
+	<button id="scrollToTopBtn">
+			<img src="up-arrow.png" alt="Scroll to top">
+	</button>
+	
+	
+<!--cart-->
+	
+<section class ="cart" style ="" >
+	<div class ="cart-header">
+		
+		<button class = "btn-close-cart">&times;</button> <!-- Nút đóng -->
+		<h2 style ="color:#333;">Giỏ Hàng</h2>
+		<div class="cart-search">
+			<input type="text" id="cart-search-input" placeholder="Tìm kiếm sản phẩm...">
+		</div>
+	</div>
+	
+	<form action ="">
+		<table>
+			<thead>
+				<tr>
+					<th>Sản phẩm</th>
+					<th>Giá</th>
+					<th>SL</th>
+					<th>Chọn</th>
+				<tr>
+			</thead>
+			<tbody>
+						
+			</tbody>
+		</table>
+		<div class ="price-total" style ="text-align: center; display: flex; justify-content: center; align-items: center; margin: 20px">
+			<p>Tổng tiền: </p> <span></span><sup></sup>
+		</div>
+	</form>
+
+</section>	
+		
+	<script src ="jsCTSP.js"></script>
+<!--
+		 <script>
+        // JavaScript để lấy thông tin sản phẩm từ URL
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const productInfo = {
+                1: { name: "Iphone 12 Pro Max 128GB", price: "32.990.000đ",priceTG: "30.990.000đ" , description: "Màn hình: OLED6.7 Super Retina XDR" , mota2: "Hệ điều hành: IOS 15" , mota3: "Camera sau: 3 camera 12 MP", mota4: "Camera trước: 12 MP", mota5: "Chip:Apple A14 Bionic", image: "12promax.jpg"   },
+                2: { name: "Iphone 13 Pro Max 512GB", price: "34.990.000đ",priceTG: "33.990.000đ", description: "Màn hình: OLED6.7 Super Retina XDR", mota2: "Hệ điều hành: IOS 15", mota3: "Camera sau: 3 camera 15 MP", mota4: "Camera trước: 15 MP", mota5: "Chip:Apple A15 Bionic" , image: "13promax.jpg" },
+                3: { name: "Iphone 12 Pro Max 512GB", price: "33.000.000đ",priceTG: "32.990.000đ", description: "Màn hình: OLED6.7 Super Retina XDR", mota2: "Hệ điều hành: IOS 15", mota3: "Camera sau: 3 camera 18 MP", mota4: "Camera trước: 12 MP", mota5: "Chip:Apple A14 Bionic" , image: "11promax.jpg" }
+            };
+
+            if (productInfo[productId]) {
+                document.getElementById('product-name').innerText = productInfo[productId].name;
+                document.getElementById('product-price').innerText = productInfo[productId].price;
+				 document.getElementById('product-priceTG').innerText = productInfo[productId].priceTG;
+                document.getElementById('mota1').innerText = productInfo[productId].description;
+				document.getElementById('mota2').innerText = productInfo[productId].mota2;
+				document.getElementById('mota3').innerText = productInfo[productId].mota3;
+				document.getElementById('mota4').innerText = productInfo[productId].mota4;
+				document.getElementById('mota5').innerText = productInfo[productId].mota5;
+				document.getElementById('product-image').src = productInfo[productId].image;
+                document.getElementById('product-image').alt = productInfo[productId].name;
+            } else {
+                document.getElementById('product-info').innerText = "Sản phẩm không tồn tại.";
+            }
+        });
+		
+    </script>
+	
+	-->
+	
+	
+	<!--footer-->
+	
+	
+	<div id="footer" style="clear:both; width: 100%; height: 300px; background-color: #Fff200;  margin-top: 40px;color: #333; font-weight: bold" >
+				<div style="width: 75%; margin: 0 auto; margin-top: 20px;">
+					<div style="display: flex;padding-top: 20px;">
+						<div class="LienHe" style="max-width: 25%;color: #333">
+							<h3>LIÊN HỆ</h3>
+							<ul style="margin-left: -40px; list-style: none; padding-right: 30px;">
+								<li style="margin-bottom: 10px; line-height: 1.67;">Chúng tôi chuyên cung cấp các sản phẩm chất lượng với giá hợp lí cho người dùng</li>
+								<li>
+									@ 268 Cầu Giấy, Quận Cầu Giấy, Hà Nội, Vietnam
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67"><a href="#!" style="color: #333; text-decoration: none;">@ 0912117494</a> <br/>Thứ 2 - Chủ nhật: 9:00 - 18:00</li>
+								<li style="margin-bottom: 10px; line-height: 1.67"><a href="#!" style="color: #333; text-decoration: none;">@ thegioididong@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="DanhMuc" style="width: 25%;color: #333; font-weight: bold">
+							<h3>Danh mục</h3>
+							<ul style="margin-left: -25px;color: #333">
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style=" color: #333;text-decoration: none;font-weight: bold">Trang chủ</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333;text-decoration: none;font-weight: bold">Sản phẩm</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;font-weight: bold">Liên hệ</a>
+								</li >
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;font-weight: bold">Tin tức</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;font-weight: bold">Giới thiệu</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style=" color: #333;text-decoration: none;font-weight: bold">Demo tủy chọn</a>
+								</li>
+							</ul>
+						</div>
+						<!--  -->
+						<div class="HoTro" style="width: 25%;color: #333">
+							<h3>Hỗ trợ khách hàng</h3>
+							<ul style="margin-left: -25px">
+								<li style="margin-bottom: 10px; line-height: 1.67;">
+									<a href="#!" style="color: #333; text-decoration: none;">Trang chủ</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;">Sản phẩm</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;">Liên hệ</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;">Tin tức</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;">Giới thiệu</a>
+								</li>
+								<li style="margin-bottom: 10px; line-height: 1.67">
+									<a href="#!" style="color: #333; text-decoration: none;">Demo tủy chọn</a>
+								</li>
+							</ul>
+						</div>
+						<div style="width: 25%; height: 100%;color: #333">
+							<h3 style ="padding-bottom: 30px;">Kết nối với Thế Giới Di Động</h3>
+							<div style="width: 100%;">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.462087197153!2d106.09394077471185!3d20.933950491029226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a308e2d41a7f%3A0xf5bcb1786a44972b!2zQsO5aSwgTeG7uSBIw6BvLCBIxrBuZyBZw6puLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1712894313736!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="width: 100%;">
+					<div style=" width: 100%; background-color: #FED100; color: #333; height: 100%; margin-top: 12px;">
+						<div style="width: 80%; margin: 0 auto; display: flex;">
+							<div style="width: 50%; color: #333; display: flex; align-items: center;">
+								<p style="color: #333; margin: 0;">© Bản quyền thuộc về NQT | <a href="#!" style="text-decoration: none; color: #333;">Powered by NQT</a></p>
+							</div>
+
+							<div style="width: 50%;color: #333;">
+								<ul style="display: flex; list-style: none; float: right;">
+									<li style="margin-right: 10px;"><a href="#!" style="text-decoration: none;color: #333 ">Tìm kiếm</a></li>
+									<li style="margin-right: 10px;"><a href="#!" style="text-decoration: none;color: #333 ">Chính sách</a></li>
+									<li style="margin-right: 10px;"><a href="#!" style="text-decoration: none;color: #333 ">Điều khoản</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+	<!--kêt thúc footer-->
+	
+	
+<script>
+function highlightButton(buttonId) {
+    // Reset all button styles
+    const buttons = document.querySelectorAll('.nutmau input[type="button"]');
+    buttons.forEach(button => {
+        button.style.backgroundColor = '';
+        button.style.color = '';
+    });
+
+    // Highlight the selected button
+    const selectedButton = document.getElementById(buttonId);
+    selectedButton.style.backgroundColor = 'black';
+    selectedButton.style.color = 'white';
+}
+</script>
+	
+	
+</body>
+
+</html>

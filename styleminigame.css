@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.circle {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transform-origin: center;
+    font-size: 14px;
+}
+
+.section:nth-child(1) {
+    background-color: #007bff;
+}
+
+.section:nth-child(2) {
+    background-color: #28a745;
+}
+
+/* Tương tự cho các phần còn lại */
+.section:nth-child(4) {
+    background-color: #CCC
+}
+
+.section:nth-child(5) {
+    background-color: #FED100;
+}
+
+
+.section:nth-child(6) {
+    background-color: red;
+}
+
+
+.section:nth-child(7) {
+    background-color: green;
+}
+
+.section:nth-child(8) {
+    background-color: blue;
+}
+
+.section:nth-child(9) {
+    background-color: orange;
+}
+
+.section:nth-child(10) {
+    background-color: pink;
+}
+
+.section:nth-child(11) {
+    background-color: brown;
+}
+
+.section:nth-child(12) {
+    background-color: purple;
+}
+
+
+.pointer {
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: black;
+    transform-origin: bottom center;
+    transform: translateY(-50%);
+    transition: transform 5s ease-out;
+}
+
+#spinBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

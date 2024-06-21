@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+	 <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input[type="text"] {
+            width: calc(100% - 110px);
+            padding: 5px;
+        }
+        span {
+            color: red;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            display: none;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 10;
+        }
+        .header {
+            width: 100%;
+            height: 70px;
+            background-color: #FFF200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            color: #333;
+			font-weight: bold;
+			margin: 0px auto;
+			margin-bottom: 10px;
+        }
+		
+		.header img{
+			width: 450px;
+			height: 100%;
+			
+		}
+		
+		.header h3{
+			margin: 0px 70px;
+		}
+		.submit-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+			padding-bottom: 20px;
+			gap: 30px;
+        }
+		
+		
+		
+		
+
+    </style>
+</head>
+<body>
+
+<!--header-->
+
+
+
+
+    <div class="header">
+		<img src ="D:\TheGioiDiDonggiohang\logo.png" />
+        <h3>ĐĂNG KÝ TÀI KHOẢN THẾ GIỚI DI ĐỘNG</h3>
+		<img src ="logo.png" />
+    </div>
+	<div style ="background-color: #FFF200; width: 100%; margin: 0 auto;">
+    <form id="registrationForm" style ="color: #333; font-weight: bold; margin-bottom: 20px">
+        <div style="display: flex; align-items: center;padding-top: 20px">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" style="margin-left: 20px;">
+            <span title="Họ và tên không quá 50 ký tự, không chứa ký tự số">*</span>
+            <div id="nameError" class="error">Họ và tên không hợp lệ</div>
+        </div>
+        <br>
+
+        <div style="display: flex; align-items: center;">
+            <label style ="margin-left: 5px" >Giới tính:</label>
+            <input  type="radio" id="male" name="gender" value="Nam"  style =""> Nam
+            <input type="radio" id="female" name="gender" value="Nữ"> Nữ
+            <span title="Giới tính không được để trống">*</span>
+            <div id="genderError" class="error">Giới tính không được để trống</div>
+        </div>
+        <br>
+
+        <div style="display: flex; align-items: center;">
+            <label for="dob">Ngày sinh:</label>
+            <input type="text" id="dob" name="dob" style="margin-left: 20px;">
+            <span title="Ngày sinh đúng định dạng Ngày/Tháng/Năm">*</span>
+            <div id="dobError" class="error">Ngày sinh không hợp lệ</div>
+        </div>
+        <br>
+
+        <div style="display: flex; align-items: center;">
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" name="address" style="margin-left: 20px;">
+            <span title="Địa chỉ không quá 40 ký tự">*</span>
+            <div id="addressError" class="error">Địa chỉ không hợp lệ</div>
+        </div>
+        <br>
+
+        <div style="display: flex; align-items: center;">
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" name="phone" style="margin-left: 20px;">
+            <span title="Điện thoại chỉ là số">*</span>
+            <div id="phoneError" class="error">Số điện thoại không hợp lệ</div>
+        </div>
+        <br>
+
+        <div style="display: flex; align-items: center;">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" style="margin-left: 20px;">
+            <span title="Email phải chứa @ và dấu chấm">*</span>
+            <div id="emailError" class="error">Email không hợp lệ</div>
+        </div>
+        <br>
+
+        <div style="display: flex; align-items: center;">
+            <label for="captcha">Mã xác nhận:</label>
+            <input type="text" id="captcha" name="captcha" style="margin-left: 20px;">
+            <span title="Mã xác nhận phải là số">*</span>
+            <div id="captchaError" class="error">Mã xác nhận không hợp lệ</div>
+        </div>
+        <br>
+		<div class ="submit-container">
+			<button type="button" onclick="window.location.href='indexTheGioiDiDong.html'">Đăng Nhập</button>
+			<button type="button" onclick="validateForm()">Đăng Ký</button>
+			<button type="button" onclick="window.location.href='indexTheGioiDiDong.html'">Trang Chủ</button>
+		</div>
+    </form>
+	</div>
+
+
+
+
+
+<!--form xác nhận-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('span').hover(function(){
+                const title = $(this).attr('title');
+                $('<div class="tooltip">' + title + '</div>').appendTo('body').fadeIn('slow');
+            }, function() {
+                $('.tooltip').remove();
+            }).mousemove(function(e) {
+                const mousex = e.pageX + 20;
+                const mousey = e.pageY + 10;
+                $('.tooltip').css({ top: mousey, left: mousex });
+            });
+
+            $('#name').blur(validateName);
+            $('input[name="gender"]').blur(validateGender);
+            $('#dob').blur(validateDob);
+            $('#address').blur(validateAddress);
+            $('#phone').blur(validatePhone);
+            $('#email').blur(validateEmail);
+            $('#captcha').blur(validateCaptcha);
+        });
+
+        function validateName() {
+            const name = $('#name').val();
+            const regex = /^[A-Za-z\s]{1,50}$/;
+            if (!regex.test(name)) {
+                $('#nameError').show();
+                return false;
+            } else {
+                $('#nameError').hide();
+                return true;
+            }
+        }
+
+        function validateGender() {
+            const gender = $('input[name="gender"]:checked').val();
+            if (!gender) {
+                $('#genderError').show();
+                return false;
+            } else {
+                $('#genderError').hide();
+                return true;
+            }
+        }
+
+        function validateDob() {
+            const dob = $('#dob').val();
+            const regex = /^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[012])\/\d{4}$/;
+            if (!regex.test(dob)) {
+                $('#dobError').show();
+                return false;
+            } else {
+                $('#dobError').hide();
+                return true;
+            }
+        }
+
+        function validateAddress() {
+            const address = $('#address').val();
+            if (address.length > 40) {
+                $('#addressError').show();
+                return false;
+            } else {
+                $('#addressError').hide();
+                return true;
+            }
+        }
+
+        function validatePhone() {
+            const phone = $('#phone').val();
+            const regex = /^[0-9]+$/;
+            if (!regex.test(phone)) {
+                $('#phoneError').show();
+                return false;
+            } else {
+                $('#phoneError').hide();
+                return true;
+            }
+        }
+
+        function validateEmail() {
+            const email = $('#email').val();
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(email)) {
+                $('#emailError').show();
+                return false;
+            } else {
+                $('#emailError').hide();
+                return true;
+            }
+        }
+
+        function validateCaptcha() {
+            const captcha = $('#captcha').val();
+            const regex = /^[0-9]+$/;
+            if (!regex.test(captcha)) {
+                $('#captchaError').show();
+                return false;
+            } else {
+                $('#captchaError').hide();
+                return true;
+            }
+        }
+
+        function validateForm() {
+            let isValid = true;
+            isValid &= validateName();
+            isValid &= validateGender();
+            isValid &= validateDob();
+            isValid &= validateAddress();
+            isValid &= validatePhone();
+            isValid &= validateEmail();
+            isValid &= validateCaptcha();
+
+            if (isValid) {
+                alert('Đăng ký thành công!');
+            } else {
+                alert('Vui lòng điền đúng tất cả các trường!');
+            }
+        }
+		
+		
+		document.addEventListener('DOMContentLoaded', () => {
+    const addressbtn = document.querySelector('#address-form');
+    if (addressbtn) {
+        addressbtn.addEventListener("click", function() {
+            document.querySelector('.address-form').style.display = "flex";
+        });
+    }
+});
+
+const addressclose = document.querySelector('#address-close');
+addressclose.addEventListener("click", function() {
+            document.querySelector('.address-form').style.display = "none";
+        });
+		
+		
+		
+		
+		
+
+		
+		
+		
+    </script>
+</body>
+</html>
